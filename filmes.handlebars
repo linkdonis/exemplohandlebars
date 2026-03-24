@@ -1,0 +1,52 @@
+<div class="container mt-5">
+
+    <div class="d-flex justify-content-between align-items-center mb-4">
+        <h2 class="fw-bold">🎬 Lista de Filmes</h2>
+
+         <a href="/filmes/cadastro" class="btn btn-cinema">
+             + Novo Filme
+             </a>
+            
+        </div>
+
+        <div class="card shadow-sm">
+            <div class="card-body">
+
+                <table class="table table-hover table-striped align-middle">
+
+                    <thead class="table-dark">
+                        <tr>
+                            <th>Título</th>
+                            <th>Diretor</th>
+                            <th>Ano</th>
+                            <th>Gênero</th>
+                            <th>Descrição</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+
+                    {{#each filmes}}
+
+                        <tr>
+                            <td class="fw-semibold">{{this.titulo}}</td>
+                            <td>{{this.diretor}}</td>
+                            <td>{{this.ano}}</td>
+                            <td>
+                                <span class="badge bg-secondary">
+                                    {{this.genero}}
+                                </span>
+                            </td>
+                            <td>{{this.descricao}}</td>
+                        </tr>
+
+                    {{/each}}
+
+                    </tbody>
+
+                </table>
+
+            </div>
+        </div>
+
+    </div>

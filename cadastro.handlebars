@@ -1,0 +1,34 @@
+<h2>Cadastrar Filme</h2>
+
+<form action="/filmes" method="POST">
+
+<div class="mb-3">
+<label>Título</label>
+<input type="text" name="titulo" class="form-control" required>
+</div>
+
+<div class="mb-3">
+<label>Diretor</label>
+<input type="text" name="diretor" class="form-control" required>
+</div>
+
+<div class="mb-3">
+<label>Ano de lançamento</label>
+<input type="number" name="ano" class="form-control" required>
+</div>
+
+<div class="mb-3">
+<label>Gênero</label>
+<input type="text" name="genero" class="form-control" required>
+</div>
+
+<div class="mb-3">
+<label>Descrição</label>
+<textarea name="descricao" class="form-control"></textarea>
+</div>
+
+<button type="submit" class="btn btn-success">
+Cadastrar Filme
+</button>
+
+</form>
